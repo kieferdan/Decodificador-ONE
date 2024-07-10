@@ -1,0 +1,11 @@
+@import "components/button.css";
+
+/* Estilos globais */
+body {
+  font-family: "Arial, sans-serif";
+  margin: 0;
+  padding: 0;
+  background-color: #e9ecf8;
+}
+
+/* Outros estilos globais */
