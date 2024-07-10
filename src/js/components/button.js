@@ -1,9 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const button = document.getElementById("Button");
+// Função para inicializar o evento de clique do botão
+function initializeButton() {
+  const button = document.getElementById("myButton");
 
-  if (button) {
-    button.addEventListener("click", () => {
-      alert("Button clicked");
-    });
-  }
-});
+  button
+    ? button.addEventListener("click", () => {
+        console.log("Button clicked");
+      })
+    : console.error("Button not found");
+}
