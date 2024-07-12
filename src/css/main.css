@@ -6,7 +6,21 @@ body {
   font-family: "Arial, sans-serif";
   margin: 0;
   padding: 0;
-  background-color: #e9ecf8;
+  background-color: #f3f5fc;
 }
 
-/* Outros estilos globais */
+section {
+  margin: 0 auto;
+  padding: 24px;
+  max-width: 1200px;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  color: #0a3871;
+}
+
+input::placeholder {
+  color: #0a3871;
+}
