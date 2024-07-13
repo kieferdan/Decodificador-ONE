@@ -97,3 +97,53 @@ section {
   color: #343a40;
   margin: 0;
 }
+
+.button-wrap {
+  padding-bottom: 64px;
+  display: flex;
+  width: 100%;
+  gap: 8px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* iPads and Tablets (481px — 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Estilos específicos para tablets */
+  main {
+    width: 100%;
+  }
+  .input {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .input::placeholder {
+    font-size: 28px;
+  }
+  .alert {
+    font-size: 14px;
+  }
+  .button-wrap {
+    flex-direction: row;
+    gap: 16px;
+  }
+}
+
+/* Laptops and small screens (769px — 1200px) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* Estilos específicos para laptops */
+  section {
+    padding: 32px 24px;
+  }
+  .input {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .input::placeholder {
+    font-size: 24px;
+  }
+  .alert {
+    font-size: 16px;
+  }
+}

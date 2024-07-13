@@ -1,7 +1,14 @@
 .custom-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   padding: 24px;
-  border-radius: 5px;
+  border-radius: 24px;
   cursor: pointer;
+  align-self: stretch;
+  &:not(:last-of-type) {
+    margin-bottom: 24px;
+  }
 }
 
 .custom-button.code-button {

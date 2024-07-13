@@ -11,46 +11,54 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      as="style"
+    />
   </head>
   <body>
     <section class="container">
       <header class="logo-header">
-        <img src="src/assets/images/Group 3.svg" alt="Logo" />
+        <img src="src/assets/images/Group 3.svg" alt="Logo DecodeONE" />
       </header>
-      <container class="input-container">
-        <textarea
-          id="input-text"
-          class="input"
-          cols="40"
-          rows="5"
-          placeholder="Digite seu texto"
-        ></textarea>
-        <div class="alert-caps">
-          <img
-            src="src/assets/icons/exclamation_circle_fill.svg"
-            class="exclamation-icon"
-            alt="exclamation-icon"
-          />
-          <p class="alert">Apenas letras minúsculas e sem acento.</p>
-        </div>
-      </container>
-      <div id="app"></div>
-      <container class="answer-container">
-        <div class="answer">
-          <div class="code-answer">
-            <p id="output-text" class="code-title">
-              Nenhuma Mensagem encontrada
-            </p>
-            <p class="code-result">
-              Digite um texto que você deseja criptografar ou descriptografar.
-            </p>
+      <main>
+        <div class="input-container">
+          <textarea
+            id="input-text"
+            class="input"
+            cols="40"
+            rows="5"
+            placeholder="Digite seu texto"
+            aria-label="Digite seu texto"
+          ></textarea>
+          <div class="alert-caps">
+            <img
+              src="src/assets/icons/exclamation_circle_fill.svg"
+              class="exclamation-icon"
+              alt="Ícone de exclamação"
+            />
+            <p class="alert">Apenas letras minúsculas e sem acento.</p>
           </div>
         </div>
-      </container>
-      <script type="module" src="src/js/main.js"></script>
+        <div id="app" class="button-wrap"></div>
+        <div class="answer-container">
+          <div class="answer">
+            <div class="code-answer">
+              <p id="output-text" class="code-title">
+                Nenhuma Mensagem encontrada
+              </p>
+              <p class="code-result">
+                Digite um texto que você deseja criptografar ou descriptografar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
       <footer>
         <p>DecodeONE - 2024 - Desenvolvido por Daniel Mota</p>
       </footer>
     </section>
+    <script type="module" src="src/js/main.js"></script>
   </body>
 </html>
