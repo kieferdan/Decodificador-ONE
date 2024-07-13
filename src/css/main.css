@@ -2,12 +2,20 @@
 @import "components/answer.css";
 
 /* Estilos globais */
+
+* {
+  box-sizing: border-box;
+}
+html,
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
-font {
+body {
   font-family: "Inter, sans-serif";
   line-height: 150%;
 }
@@ -15,7 +23,7 @@ font {
 section {
   width: 100%;
   height: 100vh;
-  background-color: rgba(243, 245, 252, 1);
+  background-color: #f3f5fc;
   padding: 24px 16px;
   display: flex;
   flex-direction: column;
@@ -26,11 +34,13 @@ section {
   margin-bottom: 56px;
 }
 
-input-container {
+.input-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .input {
@@ -44,8 +54,6 @@ input-container {
   font-weight: 400;
   line-height: 48px;
   color: rgba(10, 56, 113, 1);
-  padding-bottom: 251px;
-  padding-left: 16px;
   border: none;
   background-color: transparent;
 }
@@ -57,4 +65,35 @@ input-container {
   align-items: flex-start;
   color: #0a3871;
   font-size: 32px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input:focus::placeholder {
+  color: transparent;
+}
+
+.alert-caps {
+  width: 100%;
+  padding-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.exclamation-icon {
+  width: 16px;
+  height: 16px;
+  padding-right: 8px;
+}
+
+.alert {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #343a40;
+  margin: 0;
 }
