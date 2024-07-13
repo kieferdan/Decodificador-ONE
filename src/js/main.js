@@ -1,6 +1,10 @@
 import { initializeButton } from "./components/button.js";
+import { codeText, decodeText } from "./components/code.js";
 
 document.addEventListener("DOMContentLoaded", () => {
+  window.codeText = codeText; // Expondo para uso em button.js
+  window.decodeText = decodeText; // Expondo para uso em button.js
+
   // Função para carregar o componente HTML de forma assíncrona
   function loadComponent(url, elementId, callback, type, buttonId) {
     fetch(url)

@@ -5,12 +5,12 @@ export function initializeButton(type, button) {
     if (type === "code-button") {
       button.textContent = "Criptografar";
       button.addEventListener("click", () => {
-        codeText()
+        window.codeText();
       });
     } else if (type === "decode-button") {
       button.textContent = "Descriptografar";
       button.addEventListener("click", () => {
-        console.log("Button Decode clicked");
+        window.decodeText();
       });
     }
   } else {
