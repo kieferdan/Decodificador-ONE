@@ -5,7 +5,7 @@ export function initializeButton(type, button) {
     if (type === "code-button") {
       button.textContent = "Criptografar";
       button.addEventListener("click", () => {
-        console.log("Button Code clicked");
+        codeText()
       });
     } else if (type === "decode-button") {
       button.textContent = "Descriptografar";
