@@ -21,3 +21,13 @@
   color: #0a3871;
   background-color: transparent;
 }
+
+.copy-button {
+  background-color: #0a3871;
+  color: white;
+  border-radius: 24px;
+  padding: 8px 16px;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 16px;
+}

@@ -131,10 +131,26 @@ section {
 }
 
 /* Laptops and small screens (769px — 1200px) */
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) {
   /* Estilos específicos para laptops */
   section {
-    padding: 32px 24px;
+    height: 100vh;
+    padding: 40px 32px;
+    display: flex;
+    align-items: flex-start;
+  }
+  main {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .input-container {
+    height: 100%;
+    width: 66.66%;
   }
   .input {
     font-size: 24px;
@@ -145,5 +161,15 @@ section {
   }
   .alert {
     font-size: 16px;
+  }
+
+  .alert-caps {
+    align-items: flex-end;
+    height: 100%;
+  }
+
+  .button-wrap {
+    flex-direction: row;
+    gap: 16px;
   }
 }

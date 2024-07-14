@@ -1,9 +1,10 @@
 import { initializeButton } from "./components/button.js";
-import { codeText, decodeText } from "./components/code.js";
+import { codeText, decodeText, copyText } from "./components/code.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   window.codeText = codeText;
   window.decodeText = decodeText;
+  window.copyText = copyText;
 
   async function loadComponent(url, elementId, callback, type, buttonId) {
     try {

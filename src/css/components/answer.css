@@ -40,12 +40,39 @@
   margin: 0;
 }
 
+.output-image {
+  display: none;
+}
+
 /* iPads and Tablets (481px — 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
   /* Estilos específicos para tablets */
+  .output-image {
+    display: none;
+  }
 }
 
 /* Desktops and Laptops (769px — 1200px) */
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) {
   /* Estilos específicos para laptops */
+  .answer-container {
+    display: flex;
+    justify-content: center;
+    width: 33.33%;
+    margin-left: auto;
+  }
+
+  .code-answer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+  }
+
+  .output-image {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+  }
 }
